@@ -1,13 +1,15 @@
-import {FIRST_ACTION , SECOND_ACTION} from "./types";
+import { FIRST_ACTION, SECOND_ACTION } from "./types";
 
-export const SUCCESS = () => {
+
+export function SUCCESS() {
     return {
-        type : FIRST_ACTION
+        type: FIRST_ACTION
     }
 }
 
-export const FAILURE = () => {
+export function FAILURE() {
     return {
-        type : SECOND_ACTION
+        type: SECOND_ACTION
     }
 }
+
