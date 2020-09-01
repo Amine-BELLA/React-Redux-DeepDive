@@ -6,15 +6,18 @@ const initialState = {
 
 const rootReducer = (state = initialState, action) => {
     switch (action.type) {
-        case FIRST_ACTION:
-            return {
-                ...state,
-                connected: true
-            }
+        case FIRST_ACTION: {
+            return (
+                {
+                    ...state,
+                    connected: true
+                }
+            );
+        }
+
 
         case SECOND_ACTION:
             return {
-                ...state,
                 connected: false
             }
 
