@@ -1,4 +1,4 @@
-import { FIRST_ACTION, SECOND_ACTION } from "./types";
+import { FIRST_ACTION, SECOND_ACTION, THIRD_ACTION } from "./types";
 
 
 function SUCCESS() {
@@ -13,5 +13,12 @@ function FAILURE() {
     }
 }
 
-export { SUCCESS, FAILURE };
+function USER_TEXT(text) {
+    return {
+        type: THIRD_ACTION,
+        payload: text
+    }
+}
+
+export { SUCCESS, FAILURE, USER_TEXT };
 
